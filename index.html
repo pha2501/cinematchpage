@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cinematch - Discover trending movies and shows." />
+    <title>Cinematch</title>
+    
+    <!-- Link to Google Font Italiana -->
+     
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="#" id="logo">Cinematch</a>
+      <hr class="divider" />
+
+      <div class="sidebar-items">
+        <div class="sidebar-top">
+          <a href="#"> <i class="fa-solid fa-house">&nbsp; &nbsp;</i> Home </a>
+          <a href="#"><i class="fa-brands fa-wpexplorer">&nbsp; &nbsp;</i> Discover</a>
+          <a href="#"><i class="fa-solid fa-tv">&nbsp; &nbsp;</i> Stream</a>
+          <a href="#"><i class="fa-solid fa-bell">&nbsp; &nbsp;</i> Notifications</a>
+          <a href="#"><i class="fa-solid fa-square-plus">&nbsp; &nbsp;</i> Create</a>
+        </div>
+
+        <div class="sidebar-bot">
+          <a href="#" class="profile-container"
+            ><img src="./assets/avatar.png" alt="" class="avatar" /> Profile</a
+          >
+          <a href="#"><i class="fa-solid fa-gear"></i> Setting</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="top-nav">
+        <div class="tabs">
+          <a href="#" class="active" id="active-tab">Trending</a>
+          <a href="#">Following</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+
+      <div class="grid" style="padding: 20px;">
+        <div class="grid-item">
+          <img src="./assets/film1.png" alt="Film 1" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film2.png" alt="Film 2" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film3.png" alt="Film 3" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film4.png" alt="Film 4" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film5.png" alt="Film 5" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film6.png" alt="Film 6" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film7.png" alt="Film 7" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film8.png" alt="Film 8" />
+        </div>
+        <div class="grid-item">
+          <img src="./assets/film9.png" alt="Film 9" />
+        </div>
+      </div>
+    </div>
+
+    <div class="right-sidebar">
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search..." />
+        <select id="select">
+          <option style="color: white" value="Platforms">Platforms</option>
+          <option style="color: red" value="Netflix">Netflix</option>
+          <option style="color: blue" value="Disney+">Disney+</option>
+          <option style="color: rgb(161, 161, 161)" value="Prime">Prime</option>
+        </select>
+      </div>
+      
+<datalist id="platforms">
+  <option value="Platforms">
+  <option value="Netflix">
+  <option value="Discovery">
+  <option value="Prime">
+</datalist>
+
+    <div class="box">
+      <div class="box-header">
+        <h3>Hot Community</h3>
+      </div>
+      <div class="box-body">
+        <ul class="community-list">
+          <li> <a href="#"><img src="./assets/maxresdefault.jpg" alt="" width="20px" height="20px"> MCU</a></li>
+          <li> <a href="#"><img src="./assets/kdrama.png" alt="" width="17px" height="17px">K-Drama</a></li>
+          <li> <a href="#"><img src="./assets/starwars.png" alt="" width="20px" height="20px"> Star Wars</a></li>
+          <li> <a href="#"> <img src="./assets/gibli.jpg" alt="" width="20px" height="20px">Ghibli</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
